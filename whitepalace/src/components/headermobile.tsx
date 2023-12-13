@@ -4,7 +4,6 @@ import React, { ReactNode, useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { SIDENAV_ITEMS } from "@/constants";
-import { Icon } from "@iconify/react/dist/iconify.js";
 import { motion, useCycle } from "framer-motion";
 
 const sidebar = {
@@ -34,7 +33,7 @@ const variants = {
     transition: { staggerChildren: 0.01, staggerDirection: -1 },
   },
 };
-const headermobile = () => {
+const Headermobile = () => {
   const pathname = usePathname();
   const containerRef = useRef();
   const { height } = useDimensions(containerRef);
@@ -84,7 +83,7 @@ const headermobile = () => {
   );
 };
 
-export default headermobile;
+export default Headermobile;
 
 const MenuToggle = ({ toggle }: { toggle: any }) => (
   <button
