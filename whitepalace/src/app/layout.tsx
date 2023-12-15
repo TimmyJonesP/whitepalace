@@ -7,6 +7,7 @@ import SideNav from "@/components/side-nav";
 import PageWrapper from "@/components/page-wrapper";
 import MarginWidthWrapper from "@/components/margin-width-wrapper";
 import { HeroSection } from "@/components/herosection";
+import Shows from "@/components/shows/shows";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -31,6 +32,7 @@ export default function RootLayout({
               <HeaderMobile />
               <PageWrapper>
                 <HeroSection />
+                <Shows />
                 {children}{" "}
               </PageWrapper>
             </MarginWidthWrapper>

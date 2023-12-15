@@ -38,7 +38,7 @@ const MenuItem = ({ item }: { item: SideNavItem }) => {
     <Link href={item.path}>
       <div
         className={`text-xl py-3 font-medium ${
-          pathname === item.path ? "text-blue-500" : "text-gray-700"
+          pathname === item.path ? "text-gray-900" : "text-gray-700"
         }`}
       >
         {item.title}
