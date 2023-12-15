@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/header";
-import HeaderMobile from "@/components/headermobile";
-import SideNav from "@/components/side-nav";
-import PageWrapper from "@/components/page-wrapper";
-import MarginWidthWrapper from "@/components/margin-width-wrapper";
-import { HeroSection } from "@/components/herosection";
+import Header from "@/components/header/header";
+import HeaderMobile from "@/components/nav/headermobile";
+import SideNav from "@/components/nav/side-nav";
+import PageWrapper from "@/components/layoutConfig/page-wrapper";
+import MarginWidthWrapper from "@/components/layoutConfig/margin-width-wrapper";
+import { HeroSection } from "@/components/nav/herosection";
 import Shows from "@/components/shows/shows";
 
 const inter = Inter({ subsets: ["latin"] });
